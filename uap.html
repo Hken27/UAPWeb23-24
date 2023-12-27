@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toko Akbar Atheng</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>
+        <col class="tabel" />
+        Kode
+        <col class="tabel" />
+        Barang
+        <col class="tabel" />
+        Harga
+      </h2>
+    </div>
+
+    <div class="container">
+      <h2>
+        <col class="table" />
+        001
+        <col class="table" />
+        Barang A
+        <col class="table" />
+        10.000
+      </h2>
+    </div>
+    <div class="container">
+      <h2>
+        <col class="table" />
+        002
+        <col class="table" />
+        Barnag B
+        <col class="table" />
+        20.000
+      </h2>
+    </div>
+    <div class="container">
+      <h2>
+        <col class="table" />
+        003
+        <col class="table" />
+        Barang C
+        <col class="table" />
+        30.000
+      </h2>
+    </div>
+
+    <h1>Input User</h1>
+
+    <div class="label">
+      Masukkan Kode :
+      <input type="text" />
+    </div>
+    <div class="label">
+      Banyaknya Barang :
+      <input type="text" />
+    </div>
+    <button class="btn-prymary" onclick="toString()">Submit</button>
+
+    <script>
+      function toString() {
+        var kode = document.getElementById('kode').value;
+        var barang = document.getElementById('barang').value;
+        var harga = document.getElementById('harga').value;
+
+        if (!kode || !barang || !harga) {
+          alert('Semua kolom harap diisi.');
+          return true;
+        } else {
+          var hasil = kode,
+            barang,
+            harga;
+          alert('Data Berhasil Ditambahkan.');
+        }
+      }
+    </script>
+  </body>
+</html>
+
+<!-- membuat aplikasi penjualan menggunakan js dengan alur 
+kode nama barnanf harga
+001 A   10
+002 B   20
+003 C   30 -->
+
+<!-- user kemudian menginputkan kode
+masikan kode:
+banyak barang: -->
